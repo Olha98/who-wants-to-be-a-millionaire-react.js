@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
+import info from '../../assets/json/2.json'
 
-export const rootReducer = combineReducers({
-  Successfully: [],
+ const rootReducer = combineReducers({
+  successfully: info,
 });
+export default rootReducer
 

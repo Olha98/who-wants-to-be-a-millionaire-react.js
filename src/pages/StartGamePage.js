@@ -1,9 +1,20 @@
-import React from 'react'
-import { StartGame } from '../components/StartGame'
 
-export const StartGamePage = () => {
-  return (
-   <StartGame/>
-  )
+import { StartGame } from '../components/StartGame/StartGame'
+import React, { Component } from 'react'
+// import PropTypes from 'prop-types'
+
+export default class StartGamePage extends Component {
+  // static propTypes = {
+  //   prop: PropTypes
+  // }
+
+  render() {
+    return (
+      <>
+     <StartGame/>
+     </>
+    )
+  }
 }
+
 

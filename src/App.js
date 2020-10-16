@@ -1,21 +1,26 @@
-import React, {Suspense} from 'react'
+import React from 'react'
 // import PropTypes from 'prop-types'
-import { Route, Switch } from 'react-router-dom';
-import routes from './routes';
+import { Route, Router, Switch } from 'react-router-dom';
+import routes from './assets/routes/routes';
+import { v4 as uuidv4 } from "uuid";
 
-function App() {
+const App = () => {
+
   return (
-    <>
-<Suspense fallback={null}>
+
+
+      
           <Switch>
-            {routes.map(route =>
-                <Route key={route.label} {...route} />
-             
-            )}
-            {/* <Route component={NotFound} /> */}
+            {routes.map((route) => (
+              <Route key={uuidv4()}  {...route}>
+                {route.component}
+              </Route>
+            ))}
+           
           </Switch>
-   </Suspense>
-   </>
+     
+   
+
   )
 }
 

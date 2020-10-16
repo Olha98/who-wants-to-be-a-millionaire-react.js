@@ -1,0 +1,100 @@
+@value orange_5, orange_100, font_white_100 from '../../css/vars.module.css';
+
+@media (min-width: 320px) {
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    }
+
+  .img{
+    position: absolute;
+    top: 10%;
+    background-image: url('../../assets/images/hand1Small.png');
+    background-repeat: no-repeat;
+    border: none;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 960px) {
+
+
+  .wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .img{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    background-image: url('../../assets/images/hand1large.png') center;
+    background-repeat: no-repeat;
+    background-size: 500px auto;
+    width: 600px;
+    height: 300px;
+    
+  }
+
+  .title{
+   position: absolute;
+   top: 20%;
+   left: 40%;
+   width: 85%;
+
+    }
+
+    .link{
+      display: flex;
+    }
+ 
+}
+
+@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 1920px) {
+
+ 
+}
+
+
+.container{
+width: 100vw;
+height: 100vh;
+background: linear-gradient(to right bottom, transparent 50%, orange_5 50%);
+}
+
+
+
+
+
+.title{
+position: absolute;
+top: 55%;
+width: 84%;
+text-align: center;
+font-weight: 600;
+font-size: 32px;
+line-height: 37.12px;
+}
+
+.link{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 83%;
+width: 288px;
+height: 48px;
+font-weight: 600;
+font-size: 14px;
+line-height: 16.24px; 
+border-radius: 8px;
+border: none;
+background: orange_100;
+color: font_white_100;
+}
